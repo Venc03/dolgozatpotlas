@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/api/clubs', [ClubsController::class,'index']);
 Route::get('/api/clubs/{id}', [ClubsController::class,'show']);
 Route::post('/api/clubs', [ClubsController::class,'store']);
-Route::get('/api/clubs/{id}', [ClubsController::class,'update']);
-Route::get('/api/clubs/{id}', [ClubsController::class,'destroy']);
+Route::put('/api/clubs/{id}', [ClubsController::class,'update']);
+Route::delete('/api/clubs/{id}', [ClubsController::class,'destroy']);
 
             /* VIEW */
 
