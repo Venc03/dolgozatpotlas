@@ -1,4 +1,4 @@
-<form action="/api/clubs/{{$clubs->$club_id}}" method="post">
+<form action="/api/clubs/{{$clubs->user_id}}" method="post">
     {{csrf_field()}}
     {{method_field('PUT')}}
     <input type="text" name="location" placeholder="Location">
